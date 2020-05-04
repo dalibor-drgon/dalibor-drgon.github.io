@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>enc28j60 library: enc28j60_init_struct Struct Reference</title>
+<title>enc28j60 library: enc28j60_header Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,35 +62,27 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="structenc28j60__init__struct-members.html">List of all members</a>  </div>
+<a href="structenc28j60__header-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">enc28j60_init_struct Struct Reference</div>  </div>
+<div class="title">enc28j60_header Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Structure used for initialization of the <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a>.  
- <a href="structenc28j60__init__struct.html#details">More...</a></p>
+<p>Structure that has to prefix any variable length data when not using advanced SPI driver (that is when ENC28J60_HAS_ADVANCED_DRIVER is not defined).  
+ <a href="structenc28j60__header.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="enc28j60_8h_source.html">enc28j60.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a910db83aa075cf9257ccfac4a43da861"><td class="memItemLeft" align="right" valign="top"><a id="a910db83aa075cf9257ccfac4a43da861"></a>
-char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structenc28j60__init__struct.html#a910db83aa075cf9257ccfac4a43da861">mac_address</a> [6]</td></tr>
-<tr class="memdesc:a910db83aa075cf9257ccfac4a43da861"><td class="mdescLeft">&#160;</td><td class="mdescRight">Six-bytes-long mac address. <br /></td></tr>
-<tr class="separator:a910db83aa075cf9257ccfac4a43da861"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a667d17d1ef567fad2819d76cf90c69c5"><td class="memItemLeft" align="right" valign="top"><a id="a667d17d1ef567fad2819d76cf90c69c5"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structenc28j60__init__struct.html#a667d17d1ef567fad2819d76cf90c69c5">is_full_duplex</a></td></tr>
-<tr class="memdesc:a667d17d1ef567fad2819d76cf90c69c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Support full duplex? <br /></td></tr>
-<tr class="separator:a667d17d1ef567fad2819d76cf90c69c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac398e2aa0813c74b8bc79debfa298fde"><td class="memItemLeft" align="right" valign="top"><a id="ac398e2aa0813c74b8bc79debfa298fde"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structenc28j60__init__struct.html#ac398e2aa0813c74b8bc79debfa298fde">discard_crc_errors</a></td></tr>
-<tr class="memdesc:ac398e2aa0813c74b8bc79debfa298fde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discard frames with invalid CRC? <br /></td></tr>
-<tr class="separator:ac398e2aa0813c74b8bc79debfa298fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f677c186ad1387e065167709a37661c"><td class="memItemLeft" align="right" valign="top"><a id="a5f677c186ad1387e065167709a37661c"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structenc28j60__header.html#a5f677c186ad1387e065167709a37661c">opcode</a></td></tr>
+<tr class="memdesc:a5f677c186ad1387e065167709a37661c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opcode. <br /></td></tr>
+<tr class="separator:a5f677c186ad1387e065167709a37661c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Structure used for initialization of the <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a>. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<div class="textblock"><p>Structure that has to prefix any variable length data when not using advanced SPI driver (that is when ENC28J60_HAS_ADVANCED_DRIVER is not defined). </p>
+<p>The correct allocation and usage is as follows: </p><div class="fragment"><div class="line"><a class="code" href="structenc28j60.html">enc28j60</a> eth1;</div><div class="line"><span class="comment">//...</span></div><div class="line"><span class="keyword">static</span> <span class="keywordtype">char</span> data[ENC28J60_MAX_FRAME_LENGTH_ETH + <span class="keyword">sizeof</span>(<a class="code" href="enc28j60_8h.html#a40450e60958fb45dc7eef32f9cd082b4">enc28j60_header</a>)];</div><div class="line"><a class="code" href="enc28j60_8c.html#a590aa0182af9980bc40e9225aa6f7cd0">enc28j60_receiveframeblocking</a>(&amp;eth1, data, <span class="keyword">sizeof</span>(data));</div><div class="line">printf(<span class="stringliteral">&quot;Received frame of length %u\n&quot;</span>, eth1.<a class="code" href="structenc28j60.html#a069171f78d32ca168f2abd63dd5836de">length</a>);</div><div class="line"><span class="keywordtype">char</span> *frame = &amp;data[<span class="keyword">sizeof</span>(<a class="code" href="enc28j60_8h.html#a40450e60958fb45dc7eef32f9cd082b4">enc28j60_header</a>)];</div><div class="line">printf(<span class="stringliteral">&quot;First byte is %02X, the last is %02X\n&quot;</span>, frame[0], frame[eth1.<a class="code" href="structenc28j60.html#a069171f78d32ca168f2abd63dd5836de">length</a>-1]);</div></div><!-- fragment --> </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/<a class="el" href="enc28j60_8h_source.html">enc28j60.h</a></li>
 </ul>
 </div><!-- contents -->

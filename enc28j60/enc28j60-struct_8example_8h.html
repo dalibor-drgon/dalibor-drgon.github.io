@@ -74,13 +74,15 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Part of <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a> driver.  
+<p>Part of <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a> driver.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for enc28j60-struct.example.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="enc28j60-struct_8example_8h__incl.png" border="0" usemap="#src_2enc28j60-struct_8example_8h" alt=""/></div>
+<map name="src_2enc28j60-struct_8example_8h" id="src_2enc28j60-struct_8example_8h">
+</map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -97,7 +99,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structenc28j60.html">enc28j60</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this struct untouched, as you wish).  <a href="structenc28j60.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure holding important informations about <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a> and about the latest transmission performed.  <a href="structenc28j60.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -123,9 +125,6 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3c3394b6f9e9fae55bbec889fe2b0483"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enc28j60-struct_8example_8h.html#a3c3394b6f9e9fae55bbec889fe2b0483">enc28j60_spi_transfer</a> (<a class="el" href="structenc28j60.html">enc28j60</a> *instance, const char *tx, char *rx, unsigned length, <a class="el" href="enc28j60_8h.html#a9b4ceffe4b965c991548b12047d87511">enc28j60_spi_callback</a> on_finish)</td></tr>
-<tr class="memdesc:a3c3394b6f9e9fae55bbec889fe2b0483"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function performs (using DMA or blocking I/O) parallely transmision from 'tx' buffer and reception into 'rx' buffer.  <a href="#a3c3394b6f9e9fae55bbec889fe2b0483">More...</a><br /></td></tr>
-<tr class="separator:a3c3394b6f9e9fae55bbec889fe2b0483"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a749c657bd134d9ab85fec329d8db9241"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enc28j60-struct_8example_8h.html#a749c657bd134d9ab85fec329d8db9241">enc28j60_spi_advanced_transfer</a> (<a class="el" href="structenc28j60.html">enc28j60</a> *instance, const char *tx1, char *rx1, unsigned length1, const char *tx2, char *rx2, unsigned length2, <a class="el" href="enc28j60_8h.html#a9b4ceffe4b965c991548b12047d87511">enc28j60_spi_callback</a> on_finish)</td></tr>
 <tr class="memdesc:a749c657bd134d9ab85fec329d8db9241"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function performs (using DMA or blocking I/O) parallely transmision from 'tx1' buffer and reception into 'rx1' buffer (if 'rx1' is not null), and once this transmission is completed, performs transmission from 'tx2' (if not null) into 'rx2' (if not null).  <a href="#a749c657bd134d9ab85fec329d8db9241">More...</a><br /></td></tr>
 <tr class="separator:a749c657bd134d9ab85fec329d8db9241"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,7 +132,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ac73e336dd2240227a91551fba06a3e86"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function should wait until SPI operation in progress (if any) finishes and then return.  <a href="#ac73e336dd2240227a91551fba06a3e86">More...</a><br /></td></tr>
 <tr class="separator:ac73e336dd2240227a91551fba06a3e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac212dfc7710731f61dd57d874948db9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enc28j60-struct_8example_8h.html#ac212dfc7710731f61dd57d874948db9c">enc28j60_spi_error_handler</a> (<a class="el" href="structenc28j60.html">enc28j60</a> *instance, int error_code, uint16_t retry)</td></tr>
-<tr class="memdesc:ac212dfc7710731f61dd57d874948db9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called before callback when non-zero error code is received from enc28j60_spi_transfer.  <a href="#ac212dfc7710731f61dd57d874948db9c">More...</a><br /></td></tr>
+<tr class="memdesc:ac212dfc7710731f61dd57d874948db9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is called before callback when non-zero error code is received from enc28j60_spi_transfer() or <a class="el" href="enc28j60-struct_8example_8h.html#a749c657bd134d9ab85fec329d8db9241" title="This function performs (using DMA or blocking I/O) parallely transmision from &#39;tx1&#39; buffer and recept...">enc28j60_spi_advanced_transfer()</a>.  <a href="#ac212dfc7710731f61dd57d874948db9c">More...</a><br /></td></tr>
 <tr class="separator:ac212dfc7710731f61dd57d874948db9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0750e72252c1bb897813393bc8f988e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enc28j60-struct_8example_8h.html#a0750e72252c1bb897813393bc8f988e7">enc28j60_delay</a> (<a class="el" href="structenc28j60.html">enc28j60</a> *ins, <a class="el" href="enc28j60-struct_8example_8h.html#ad818486a89988ca9fdcea26c2f619f1a">enc28j60_tick</a> ticks)</td></tr>
 <tr class="memdesc:a0750e72252c1bb897813393bc8f988e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait until given number of ticks passes.  <a href="#a0750e72252c1bb897813393bc8f988e7">More...</a><br /></td></tr>
@@ -143,7 +142,7 @@ Functions</h2></td></tr>
 <tr class="separator:af1f60395fdc701b37931c81b09de5500"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Part of <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a> driver. </p>
+<div class="textblock"><p>Part of <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a> driver. </p>
 <dl class="section author"><dt>Author</dt><dd>Dalibor Drgon <a href="#" onclick="location.href='mai'+'lto:'+'dal'+'ib'+'or.'+'dr'+'gon'+'@g'+'mai'+'l.'+'com'; return false;">dalib<span style="display: none;">.nosp@m.</span>or.d<span style="display: none;">.nosp@m.</span>rgon@<span style="display: none;">.nosp@m.</span>gmai<span style="display: none;">.nosp@m.</span>l.com</a> </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2020-05-01</dd></dl>
@@ -251,67 +250,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a3c3394b6f9e9fae55bbec889fe2b0483"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c3394b6f9e9fae55bbec889fe2b0483">&#9670;&nbsp;</a></span>enc28j60_spi_transfer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int enc28j60_spi_transfer </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structenc28j60.html">enc28j60</a> *&#160;</td>
-          <td class="paramname"><em>instance</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>tx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>rx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>length</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="enc28j60_8h.html#a9b4ceffe4b965c991548b12047d87511">enc28j60_spi_callback</a>&#160;</td>
-          <td class="paramname"><em>on_finish</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This function performs (using DMA or blocking I/O) parallely transmision from 'tx' buffer and reception into 'rx' buffer. </p>
-<p>If the callback is null, this function must block and return the error code, otherwise it may or may not block and the error code should be passed to the callback (and 0 returned).</p>
-<p>NOTE: You must implement this function.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">instance</td><td>Pointer to <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a> struct (may contain hardware/software specific fields to determine which SPI to use). </td></tr>
-    <tr><td class="paramname">tx</td><td>Pointer pointing to data for transmission. Will not be null. </td></tr>
-    <tr><td class="paramname">rx</td><td>Pointer pointing to memory where data sohuld be received. May be null, in which case received data may be ignored. May also be same as 'tx'. </td></tr>
-    <tr><td class="paramname">length</td><td>Length of 'tx' (and length of 'rx' if 'rx' is not null). </td></tr>
-    <tr><td class="paramname">on_finish</td><td>Callback which should be called when transfer is completed. If callback is null, the function must block and return error code, otherwise if callback is supplied the function may or may not block and callback must be called (with error code as parameter) and zero must be returned.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>int error code, or 0 on success (return 0 when callback is supplied) </dd></dl>
-
-</div>
-</div>
 <a id="a749c657bd134d9ab85fec329d8db9241"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a749c657bd134d9ab85fec329d8db9241">&#9670;&nbsp;</a></span>enc28j60_spi_advanced_transfer()</h2>
 
@@ -379,7 +317,7 @@ Functions</h2></td></tr>
 <p>NOTE: You must implement this function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">instance</td><td>Pointer to <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a> struct (may contain hardware/software specific fields to determine which SPI to use). </td></tr>
+    <tr><td class="paramname">instance</td><td>Pointer to <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a> struct (may contain hardware/software specific fields to determine which SPI to use). </td></tr>
     <tr><td class="paramname">tx1</td><td>Pointer pointing to data for transmission. Will not be null. </td></tr>
     <tr><td class="paramname">rx1</td><td>Pointer pointing to memory where data sohuld be received. May be null, in which case received data may be ignored. May also be same as 'tx'. </td></tr>
     <tr><td class="paramname">length1</td><td>Length of 'tx1' (and length of 'rx1' if 'rx1' is not null). </td></tr>
@@ -448,14 +386,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>This function is called before callback when non-zero error code is received from enc28j60_spi_transfer. </p>
+<p>This function is called before callback when non-zero error code is received from enc28j60_spi_transfer() or <a class="el" href="enc28j60-struct_8example_8h.html#a749c657bd134d9ab85fec329d8db9241" title="This function performs (using DMA or blocking I/O) parallely transmision from &#39;tx1&#39; buffer and recept...">enc28j60_spi_advanced_transfer()</a>. </p>
 <p>It tells whenever we should retry the transmission (by returning true), or simply fail and return the error code to the user (by returning false).</p>
 <p>What exactly will this function do is dependant on the user. It may as well block infinitely and print error message on the screen, or always return true to retry the transmission if it's safe to do so.</p>
 <p>NOTE: You must implement this function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">instance</td><td>Pointer to <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a> struct </td></tr>
-    <tr><td class="paramname">error_code</td><td>Non-zero error code received from enc28j60_spi_transfer </td></tr>
+    <tr><td class="paramname">instance</td><td>Pointer to <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a> struct </td></tr>
+    <tr><td class="paramname">error_code</td><td>Non-zero error code received from enc28j60_spi_transfer() or <a class="el" href="enc28j60-struct_8example_8h.html#a749c657bd134d9ab85fec329d8db9241" title="This function performs (using DMA or blocking I/O) parallely transmision from &#39;tx1&#39; buffer and recept...">enc28j60_spi_advanced_transfer()</a> </td></tr>
     <tr><td class="paramname">retry</td><td>How many retries were there total (starting from 1).</td></tr>
   </table>
   </dd>
@@ -493,7 +431,7 @@ Functions</h2></td></tr>
 <p>Wait until given number of ticks passes. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ins</td><td>Pointer to initialized <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a> struct. </td></tr>
+    <tr><td class="paramname">ins</td><td>Pointer to initialized <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a> struct. </td></tr>
     <tr><td class="paramname">ticks</td><td>How many ticks this function should wait before returning. </td></tr>
   </table>
   </dd>
@@ -531,7 +469,7 @@ Functions</h2></td></tr>
 <p>Get current number of ticks. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ins</td><td>Pointer to initialized <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a> struct. </td></tr>
+    <tr><td class="paramname">ins</td><td>Pointer to initialized <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a> struct. </td></tr>
     <tr><td class="paramname">ticks</td><td>If not null, there should be stored the number of ticks. </td></tr>
   </table>
   </dd>

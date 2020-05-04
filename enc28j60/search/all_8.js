@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['status',['status',['../structenc28j60.html#ad4aeb35b4e8af539af6a9dd89f6c4ec2',1,'enc28j60']]]
+  ['next_5frx_5fframe',['next_rx_frame',['../structenc28j60.html#a8c85f26f49bbf592158dbf4d0da86361',1,'enc28j60']]]
 ];

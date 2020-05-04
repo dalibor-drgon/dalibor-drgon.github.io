@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['next_5frx_5fframe',['next_rx_frame',['../structenc28j60.html#a8c85f26f49bbf592158dbf4d0da86361',1,'enc28j60']]]
+  ['is_5ffull_5fduplex',['is_full_duplex',['../structenc28j60__init__struct.html#a667d17d1ef567fad2819d76cf90c69c5',1,'enc28j60_init_struct']]]
 ];

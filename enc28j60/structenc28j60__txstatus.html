@@ -61,19 +61,52 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structenc28j60__txstatus-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">enc28j60_txstatus Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Structure that contains data parsed from status footer appended by <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a> after frame that was transmitted.  
+<p>Structure that contains data parsed from status footer appended by <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a> after frame that was transmitted or which transmission was aborted.  
  <a href="structenc28j60__txstatus.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="enc28j60_8h_source.html">enc28j60.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a93bc39cdf8ca949541bb12c3cdcaffd9"><td class="memItemLeft" align="right" valign="top"><a id="a93bc39cdf8ca949541bb12c3cdcaffd9"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structenc28j60__txstatus.html#a93bc39cdf8ca949541bb12c3cdcaffd9">status</a></td></tr>
+<tr class="memdesc:a93bc39cdf8ca949541bb12c3cdcaffd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status vector. Use ENC28J60_TXSTATUS_* flags for check. <br /></td></tr>
+<tr class="separator:a93bc39cdf8ca949541bb12c3cdcaffd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa01a6de2c50c7cd914306114649c3273"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structenc28j60__txstatus.html#aa01a6de2c50c7cd914306114649c3273">transmit_byte_count</a></td></tr>
+<tr class="memdesc:aa01a6de2c50c7cd914306114649c3273"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total bytes transmitted on the wire for the current packet, including all bytes from collided attempts.  <a href="#aa01a6de2c50c7cd914306114649c3273">More...</a><br /></td></tr>
+<tr class="separator:aa01a6de2c50c7cd914306114649c3273"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e81d96751ded8f85c6302f0cc62a57c"><td class="memItemLeft" align="right" valign="top"><a id="a5e81d96751ded8f85c6302f0cc62a57c"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structenc28j60__txstatus.html#a5e81d96751ded8f85c6302f0cc62a57c">total_bytes_transmitted</a></td></tr>
+<tr class="memdesc:a5e81d96751ded8f85c6302f0cc62a57c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Total bytes in frame not counting collided bytes. <br /></td></tr>
+<tr class="separator:a5e81d96751ded8f85c6302f0cc62a57c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Structure that contains data parsed from status footer appended by <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a> after frame that was transmitted. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<div class="textblock"><p>Structure that contains data parsed from status footer appended by <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a> after frame that was transmitted or which transmission was aborted. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa01a6de2c50c7cd914306114649c3273"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa01a6de2c50c7cd914306114649c3273">&#9670;&nbsp;</a></span>transmit_byte_count</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t enc28j60_txstatus::transmit_byte_count</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Total bytes transmitted on the wire for the current packet, including all bytes from collided attempts. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/<a class="el" href="enc28j60_8h_source.html">enc28j60.h</a></li>
 </ul>
 </div><!-- contents -->

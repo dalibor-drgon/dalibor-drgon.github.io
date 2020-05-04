@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['total_5fbytes_5ftransmitted',['total_bytes_transmitted',['../structenc28j60__txstatus.html#a5e81d96751ded8f85c6302f0cc62a57c',1,'enc28j60_txstatus']]],
-  ['transmit_5fbyte_5fcount',['transmit_byte_count',['../structenc28j60__txstatus.html#aa01a6de2c50c7cd914306114649c3273',1,'enc28j60_txstatus']]]
+  ['retry_5fcount',['retry_count',['../structenc28j60.html#a49bc9a977ee8f14fae9363babe725b06',1,'enc28j60']]],
+  ['rxstatus',['rxstatus',['../structenc28j60.html#a15787229501f022952b110c0c9554897',1,'enc28j60']]]
 ];

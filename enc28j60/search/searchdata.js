@@ -1,10 +1,10 @@
 var indexSectionsWithContent =
 {
-  0: "_bceflnr",
+  0: "bcdefilmnorst",
   1: "e",
   2: "e",
-  3: "_e",
-  4: "bceflnr",
+  3: "e",
+  4: "bcdefilmnorst",
   5: "e",
   6: "e"
 };

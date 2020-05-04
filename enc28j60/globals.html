@@ -62,21 +62,14 @@ $(function() {
 <div class="contents">
 <div class="textblock">Here is a list of all documented file members with links to the documentation:</div>
 
-<h3><a id="index__"></a>- _ -</h3><ul>
-<li>__attribute__()
-: <a class="el" href="enc28j60_8h.html#aa3def6b00129fd27cfde2d570e11a965">enc28j60.h</a>
-</li>
-</ul>
-
-
 <h3><a id="index_e"></a>- e -</h3><ul>
 <li>enc28j60_advancerxreadpointer()
 : <a class="el" href="enc28j60_8c.html#a702e728c2042eef92799db9e7dd8aca2">enc28j60.c</a>
 , <a class="el" href="enc28j60_8h.html#a702e728c2042eef92799db9e7dd8aca2">enc28j60.h</a>
 </li>
 <li>enc28j60_aftertx()
-: <a class="el" href="enc28j60_8c.html#a1bc15c88a531442f5540833889695fae">enc28j60.c</a>
-, <a class="el" href="enc28j60_8h.html#a1bc15c88a531442f5540833889695fae">enc28j60.h</a>
+: <a class="el" href="enc28j60_8h.html#a1bc15c88a531442f5540833889695fae">enc28j60.h</a>
+, <a class="el" href="enc28j60_8c.html#a1bc15c88a531442f5540833889695fae">enc28j60.c</a>
 </li>
 <li>enc28j60_blockingio()
 : <a class="el" href="enc28j60_8c.html#a5e6599ebfa682812a954b87834ad2e8f">enc28j60.c</a>
@@ -104,6 +97,10 @@ $(function() {
 <li>enc28j60_delay()
 : <a class="el" href="enc28j60-struct_8example_8h.html#a0750e72252c1bb897813393bc8f988e7">enc28j60-struct.example.h</a>
 </li>
+<li>enc28j60_disablerx()
+: <a class="el" href="enc28j60_8c.html#a6bc4f9507c064d903267370afe9c3429">enc28j60.c</a>
+, <a class="el" href="enc28j60_8h.html#a6bc4f9507c064d903267370afe9c3429">enc28j60.h</a>
+</li>
 <li>enc28j60_discardcrcerrors()
 : <a class="el" href="enc28j60_8c.html#a30e7ea5812bd63556a7c644e51e5319c">enc28j60.c</a>
 , <a class="el" href="enc28j60_8h.html#a30e7ea5812bd63556a7c644e51e5319c">enc28j60.h</a>
@@ -130,12 +127,18 @@ $(function() {
 <li>ENC28J60_ERROR_TOO_MANY_COLLISIONS
 : <a class="el" href="enc28j60-struct_8example_8h.html#af8c9747924be6cd3bf31de1b04c2c721">enc28j60-struct.example.h</a>
 </li>
+<li>enc28j60_ethernet_header
+: <a class="el" href="enc28j60_8h.html#afc100f4fc4ff1b3a85030e008bbb3842">enc28j60.h</a>
+</li>
 <li>enc28j60_finishreadframe()
 : <a class="el" href="enc28j60_8c.html#a85fa097203908966343b81b0367f3541">enc28j60.c</a>
 , <a class="el" href="enc28j60_8h.html#a85fa097203908966343b81b0367f3541">enc28j60.h</a>
 </li>
 <li>enc28j60_getticks()
 : <a class="el" href="enc28j60-struct_8example_8h.html#af1f60395fdc701b37931c81b09de5500">enc28j60-struct.example.h</a>
+</li>
+<li>enc28j60_header
+: <a class="el" href="enc28j60_8h.html#a40450e60958fb45dc7eef32f9cd082b4">enc28j60.h</a>
 </li>
 <li>enc28j60_init()
 : <a class="el" href="enc28j60_8c.html#afdcc475d0eb776627691ae7ea4801ed2">enc28j60.c</a>
@@ -152,6 +155,9 @@ $(function() {
 <li>enc28j60_init_rxbuffer()
 : <a class="el" href="enc28j60_8c.html#a6e4405d4eb4eaadcbacbcd0aa3fb5336">enc28j60.c</a>
 , <a class="el" href="enc28j60_8h.html#a6e4405d4eb4eaadcbacbcd0aa3fb5336">enc28j60.h</a>
+</li>
+<li>enc28j60_init_struct
+: <a class="el" href="enc28j60_8h.html#a28b0f967a9bc8f1cf40814bd468882bd">enc28j60.h</a>
 </li>
 <li>enc28j60_init_txbuffer()
 : <a class="el" href="enc28j60_8c.html#ab3d57ae04a06bd5129eccdb4916244c6">enc28j60.c</a>
@@ -183,7 +189,7 @@ $(function() {
 : <a class="el" href="enc28j60_8h.html#afdc607c793b19ae1f5a117bede3f38e2">enc28j60.h</a>
 </li>
 <li>enc28j60_read()
-: <a class="el" href="enc28j60_8c.html#ad16c5cb8d9e16601018629b73e307e76">enc28j60.c</a>
+: <a class="el" href="enc28j60_8c.html#ad35a2fc021a5ade957c4602dc21ff1c1">enc28j60.c</a>
 , <a class="el" href="enc28j60_8h.html#ad16c5cb8d9e16601018629b73e307e76">enc28j60.h</a>
 </li>
 <li>enc28j60_read16bitreg()
@@ -191,8 +197,8 @@ $(function() {
 , <a class="el" href="enc28j60_8h.html#a4077973861b34cd5be5702b01fa33b10">enc28j60.h</a>
 </li>
 <li>enc28j60_read8bitreg()
-: <a class="el" href="enc28j60_8c.html#a6812decbc6dae7dd0712c082c844eb14">enc28j60.c</a>
-, <a class="el" href="enc28j60_8h.html#a6812decbc6dae7dd0712c082c844eb14">enc28j60.h</a>
+: <a class="el" href="enc28j60_8h.html#a6812decbc6dae7dd0712c082c844eb14">enc28j60.h</a>
+, <a class="el" href="enc28j60_8c.html#a6812decbc6dae7dd0712c082c844eb14">enc28j60.c</a>
 </li>
 <li>enc28j60_read_try()
 : <a class="el" href="enc28j60_8c.html#a05b02d8d4d412d3e445f5a910239ba3e">enc28j60.c</a>
@@ -205,17 +211,21 @@ $(function() {
 : <a class="el" href="enc28j60_8c.html#a2a01d3d124160c7c198cd54dc0360930">enc28j60.c</a>
 , <a class="el" href="enc28j60_8h.html#a2a01d3d124160c7c198cd54dc0360930">enc28j60.h</a>
 </li>
+<li>enc28j60_readphyreg()
+: <a class="el" href="enc28j60_8c.html#ab69afd5e97ad305bb408e46c0e56678f">enc28j60.c</a>
+, <a class="el" href="enc28j60_8h.html#ab69afd5e97ad305bb408e46c0e56678f">enc28j60.h</a>
+</li>
 <li>enc28j60_readreadpointer()
-: <a class="el" href="enc28j60_8c.html#a279727559a851df5048ef645ee41698e">enc28j60.c</a>
-, <a class="el" href="enc28j60_8h.html#a279727559a851df5048ef645ee41698e">enc28j60.h</a>
+: <a class="el" href="enc28j60_8h.html#a279727559a851df5048ef645ee41698e">enc28j60.h</a>
+, <a class="el" href="enc28j60_8c.html#a279727559a851df5048ef645ee41698e">enc28j60.c</a>
 </li>
 <li>enc28j60_readrevision()
 : <a class="el" href="enc28j60_8c.html#afda31f896a1a6bc9460bb76aaed93f05">enc28j60.c</a>
 , <a class="el" href="enc28j60_8h.html#afda31f896a1a6bc9460bb76aaed93f05">enc28j60.h</a>
 </li>
 <li>enc28j60_readrxframescount()
-: <a class="el" href="enc28j60_8c.html#aeb18851eb58e4d3ba572e5d6953b7015">enc28j60.c</a>
-, <a class="el" href="enc28j60_8h.html#aeb18851eb58e4d3ba572e5d6953b7015">enc28j60.h</a>
+: <a class="el" href="enc28j60_8h.html#aeb18851eb58e4d3ba572e5d6953b7015">enc28j60.h</a>
+, <a class="el" href="enc28j60_8c.html#aeb18851eb58e4d3ba572e5d6953b7015">enc28j60.c</a>
 </li>
 <li>enc28j60_readtxstatus()
 : <a class="el" href="enc28j60_8c.html#aeb10b9cdc6f777752f4d6d3ece8f87aa">enc28j60.c</a>
@@ -238,12 +248,12 @@ $(function() {
 , <a class="el" href="enc28j60_8h.html#a9536d7fe0e3314b8965a7300024f4804">enc28j60.h</a>
 </li>
 <li>enc28j60_shouldretransmit()
-: <a class="el" href="enc28j60_8c.html#ae54a62cb401e5f96858a1fc8659ed7bb">enc28j60.c</a>
-, <a class="el" href="enc28j60_8h.html#ae54a62cb401e5f96858a1fc8659ed7bb">enc28j60.h</a>
+: <a class="el" href="enc28j60_8h.html#ae54a62cb401e5f96858a1fc8659ed7bb">enc28j60.h</a>
+, <a class="el" href="enc28j60_8c.html#ae54a62cb401e5f96858a1fc8659ed7bb">enc28j60.c</a>
 </li>
 <li>enc28j60_softreset()
-: <a class="el" href="enc28j60_8c.html#a0358972c6ffc8a0e18a12e8212115493">enc28j60.c</a>
-, <a class="el" href="enc28j60_8h.html#a0358972c6ffc8a0e18a12e8212115493">enc28j60.h</a>
+: <a class="el" href="enc28j60_8h.html#a0358972c6ffc8a0e18a12e8212115493">enc28j60.h</a>
+, <a class="el" href="enc28j60_8c.html#a0358972c6ffc8a0e18a12e8212115493">enc28j60.c</a>
 </li>
 <li>enc28j60_spi_advanced_transfer()
 : <a class="el" href="enc28j60-struct_8example_8h.html#a749c657bd134d9ab85fec329d8db9241">enc28j60-struct.example.h</a>
@@ -253,10 +263,6 @@ $(function() {
 </li>
 <li>enc28j60_spi_error_handler()
 : <a class="el" href="enc28j60-struct_8example_8h.html#ac212dfc7710731f61dd57d874948db9c">enc28j60-struct.example.h</a>
-</li>
-<li>enc28j60_spi_transfer()
-: <a class="el" href="enc28j60-struct_8example_8h.html#a3c3394b6f9e9fae55bbec889fe2b0483">enc28j60-struct.example.h</a>
-, <a class="el" href="enc28j60_8c.html#a3c3394b6f9e9fae55bbec889fe2b0483">enc28j60.c</a>
 </li>
 <li>enc28j60_spi_transfer_join()
 : <a class="el" href="enc28j60-struct_8example_8h.html#ac73e336dd2240227a91551fba06a3e86">enc28j60-struct.example.h</a>
@@ -268,12 +274,12 @@ $(function() {
 : <a class="el" href="enc28j60-struct_8example_8h.html#a53e40e8867796ac2031c5950e49d2831">enc28j60-struct.example.h</a>
 </li>
 <li>enc28j60_transmitframe()
-: <a class="el" href="enc28j60_8c.html#aa8bdeba76f6551e39dbc8db9a64270de">enc28j60.c</a>
-, <a class="el" href="enc28j60_8h.html#aa8bdeba76f6551e39dbc8db9a64270de">enc28j60.h</a>
+: <a class="el" href="enc28j60_8h.html#aa8bdeba76f6551e39dbc8db9a64270de">enc28j60.h</a>
+, <a class="el" href="enc28j60_8c.html#aa8bdeba76f6551e39dbc8db9a64270de">enc28j60.c</a>
 </li>
 <li>enc28j60_transmitframeblocking()
-: <a class="el" href="enc28j60_8c.html#ab64074e15e39508131200154bf959a1f">enc28j60.c</a>
-, <a class="el" href="enc28j60_8h.html#ab64074e15e39508131200154bf959a1f">enc28j60.h</a>
+: <a class="el" href="enc28j60_8h.html#ab64074e15e39508131200154bf959a1f">enc28j60.h</a>
+, <a class="el" href="enc28j60_8c.html#ab64074e15e39508131200154bf959a1f">enc28j60.c</a>
 </li>
 <li>enc28j60_txstatus
 : <a class="el" href="enc28j60_8h.html#a73a9883a0089fc5914d2d0dc69f8207a">enc28j60.h</a>
@@ -287,20 +293,24 @@ $(function() {
 , <a class="el" href="enc28j60_8h.html#a29022b84cf543a15408521d75e672398">enc28j60.h</a>
 </li>
 <li>enc28j60_write8bitreg()
-: <a class="el" href="enc28j60_8c.html#acc29f39251e818c2995a6b518de9443f">enc28j60.c</a>
-, <a class="el" href="enc28j60_8h.html#acc29f39251e818c2995a6b518de9443f">enc28j60.h</a>
+: <a class="el" href="enc28j60_8h.html#acc29f39251e818c2995a6b518de9443f">enc28j60.h</a>
+, <a class="el" href="enc28j60_8c.html#acc29f39251e818c2995a6b518de9443f">enc28j60.c</a>
 </li>
 <li>enc28j60_writeframe()
-: <a class="el" href="enc28j60_8c.html#ae353d94056b89e52b7c4f385bf4b047b">enc28j60.c</a>
-, <a class="el" href="enc28j60_8h.html#ae353d94056b89e52b7c4f385bf4b047b">enc28j60.h</a>
+: <a class="el" href="enc28j60_8h.html#ae353d94056b89e52b7c4f385bf4b047b">enc28j60.h</a>
+, <a class="el" href="enc28j60_8c.html#ae353d94056b89e52b7c4f385bf4b047b">enc28j60.c</a>
+</li>
+<li>enc28j60_writephyreg()
+: <a class="el" href="enc28j60_8h.html#a9604dd49cfd32534e951b9aa46d8f8ef">enc28j60.h</a>
+, <a class="el" href="enc28j60_8c.html#a9604dd49cfd32534e951b9aa46d8f8ef">enc28j60.c</a>
 </li>
 <li>enc28j60_writereadpointer()
-: <a class="el" href="enc28j60_8c.html#aa2fa6bb9bea4e7a2941898f4f2f0506a">enc28j60.c</a>
-, <a class="el" href="enc28j60_8h.html#aa2fa6bb9bea4e7a2941898f4f2f0506a">enc28j60.h</a>
+: <a class="el" href="enc28j60_8h.html#aa2fa6bb9bea4e7a2941898f4f2f0506a">enc28j60.h</a>
+, <a class="el" href="enc28j60_8c.html#aa2fa6bb9bea4e7a2941898f4f2f0506a">enc28j60.c</a>
 </li>
 <li>enc28j60_writewritepointer()
-: <a class="el" href="enc28j60_8c.html#a669b65c803e3a47f87c4eecc9a5db249">enc28j60.c</a>
-, <a class="el" href="enc28j60_8h.html#a669b65c803e3a47f87c4eecc9a5db249">enc28j60.h</a>
+: <a class="el" href="enc28j60_8h.html#a669b65c803e3a47f87c4eecc9a5db249">enc28j60.h</a>
+, <a class="el" href="enc28j60_8c.html#a669b65c803e3a47f87c4eecc9a5db249">enc28j60.c</a>
 </li>
 </ul>
 </div><!-- contents -->

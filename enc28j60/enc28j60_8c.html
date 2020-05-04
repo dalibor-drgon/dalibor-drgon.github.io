@@ -71,7 +71,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Part of <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a> driver.  
+<p>Part of <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a> driver.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="enc28j60_8h_source.html">enc28j60.h</a>&quot;</code><br />
 <code>#include &lt;stddef.h&gt;</code><br />
@@ -87,11 +87,8 @@ Include dependency graph for enc28j60.c:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3c3394b6f9e9fae55bbec889fe2b0483"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enc28j60_8c.html#a3c3394b6f9e9fae55bbec889fe2b0483">enc28j60_spi_transfer</a> (<a class="el" href="structenc28j60.html">enc28j60</a> *instance, const char *tx, char *rx, unsigned length, <a class="el" href="enc28j60_8h.html#a9b4ceffe4b965c991548b12047d87511">enc28j60_spi_callback</a> on_finish)</td></tr>
-<tr class="memdesc:a3c3394b6f9e9fae55bbec889fe2b0483"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function performs (using DMA or blocking I/O) parallely transmision from 'tx' buffer and reception into 'rx' buffer.  <a href="#a3c3394b6f9e9fae55bbec889fe2b0483">More...</a><br /></td></tr>
-<tr class="separator:a3c3394b6f9e9fae55bbec889fe2b0483"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e6599ebfa682812a954b87834ad2e8f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enc28j60_8c.html#a5e6599ebfa682812a954b87834ad2e8f">enc28j60_blockingio</a> (<a class="el" href="structenc28j60.html">enc28j60</a> *ins, const char *tx, char *rx, unsigned length)</td></tr>
-<tr class="memdesc:a5e6599ebfa682812a954b87834ad2e8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs IO on <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a>.  <a href="#a5e6599ebfa682812a954b87834ad2e8f">More...</a><br /></td></tr>
+<tr class="memdesc:a5e6599ebfa682812a954b87834ad2e8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs IO on <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a>.  <a href="#a5e6599ebfa682812a954b87834ad2e8f">More...</a><br /></td></tr>
 <tr class="separator:a5e6599ebfa682812a954b87834ad2e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e63cd813d48904b4f16723ae008cba3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enc28j60_8c.html#a0e63cd813d48904b4f16723ae008cba3">enc28j60_ensurebank</a> (<a class="el" href="structenc28j60.html">enc28j60</a> *ins, uint8_t bank)</td></tr>
 <tr class="memdesc:a0e63cd813d48904b4f16723ae008cba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensures that correct bank is currently selected.  <a href="#a0e63cd813d48904b4f16723ae008cba3">More...</a><br /></td></tr>
@@ -126,11 +123,17 @@ Functions</h2></td></tr>
 <tr class="memitem:a2932cc48c58d8f9e388f664d7c4b452f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enc28j60_8c.html#a2932cc48c58d8f9e388f664d7c4b452f">enc28j60_set16bitreg</a> (<a class="el" href="structenc28j60.html">enc28j60</a> *ins, uint8_t reg, uint16_t content)</td></tr>
 <tr class="memdesc:a2932cc48c58d8f9e388f664d7c4b452f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets bits given by <code>content</code> in given 16-bit register.  <a href="#a2932cc48c58d8f9e388f664d7c4b452f">More...</a><br /></td></tr>
 <tr class="separator:a2932cc48c58d8f9e388f664d7c4b452f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab69afd5e97ad305bb408e46c0e56678f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enc28j60_8c.html#ab69afd5e97ad305bb408e46c0e56678f">enc28j60_readphyreg</a> (<a class="el" href="structenc28j60.html">enc28j60</a> *ins, uint8_t reg, uint16_t *content)</td></tr>
+<tr class="memdesc:ab69afd5e97ad305bb408e46c0e56678f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read from PHY register.  <a href="#ab69afd5e97ad305bb408e46c0e56678f">More...</a><br /></td></tr>
+<tr class="separator:ab69afd5e97ad305bb408e46c0e56678f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9604dd49cfd32534e951b9aa46d8f8ef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enc28j60_8c.html#a9604dd49cfd32534e951b9aa46d8f8ef">enc28j60_writephyreg</a> (<a class="el" href="structenc28j60.html">enc28j60</a> *ins, uint8_t reg, uint16_t content)</td></tr>
+<tr class="memdesc:a9604dd49cfd32534e951b9aa46d8f8ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write into PHY register.  <a href="#a9604dd49cfd32534e951b9aa46d8f8ef">More...</a><br /></td></tr>
+<tr class="separator:a9604dd49cfd32534e951b9aa46d8f8ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afda31f896a1a6bc9460bb76aaed93f05"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enc28j60_8c.html#afda31f896a1a6bc9460bb76aaed93f05">enc28j60_readrevision</a> (<a class="el" href="structenc28j60.html">enc28j60</a> *ins, uint8_t *rev)</td></tr>
 <tr class="memdesc:afda31f896a1a6bc9460bb76aaed93f05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the revision number into <code>*rev</code>.  <a href="#afda31f896a1a6bc9460bb76aaed93f05">More...</a><br /></td></tr>
 <tr class="separator:afda31f896a1a6bc9460bb76aaed93f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0358972c6ffc8a0e18a12e8212115493"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enc28j60_8c.html#a0358972c6ffc8a0e18a12e8212115493">enc28j60_softreset</a> (<a class="el" href="structenc28j60.html">enc28j60</a> *ins)</td></tr>
-<tr class="memdesc:a0358972c6ffc8a0e18a12e8212115493"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends soft-reset and waits until the ENC28J60 is operational again.  <a href="#a0358972c6ffc8a0e18a12e8212115493">More...</a><br /></td></tr>
+<tr class="memdesc:a0358972c6ffc8a0e18a12e8212115493"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends soft-reset and waits until the <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a> is operational again.  <a href="#a0358972c6ffc8a0e18a12e8212115493">More...</a><br /></td></tr>
 <tr class="separator:a0358972c6ffc8a0e18a12e8212115493"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a299019a5dbe3c1af99ae9fd64d7101e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enc28j60_8c.html#a299019a5dbe3c1af99ae9fd64d7101e4">enc28j60_enablemulticast</a> (<a class="el" href="structenc28j60.html">enc28j60</a> *ins, bool enable)</td></tr>
 <tr class="memdesc:a299019a5dbe3c1af99ae9fd64d7101e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable reception of frames with multicast destination address.  <a href="#a299019a5dbe3c1af99ae9fd64d7101e4">More...</a><br /></td></tr>
@@ -142,7 +145,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a30e7ea5812bd63556a7c644e51e5319c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discard frames that have invalid CRC checksum present.  <a href="#a30e7ea5812bd63556a7c644e51e5319c">More...</a><br /></td></tr>
 <tr class="separator:a30e7ea5812bd63556a7c644e51e5319c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdcc475d0eb776627691ae7ea4801ed2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enc28j60_8c.html#afdcc475d0eb776627691ae7ea4801ed2">enc28j60_init</a> (<a class="el" href="structenc28j60.html">enc28j60</a> *ins, <a class="el" href="structenc28j60__init__struct.html">enc28j60_init_struct</a> *init)</td></tr>
-<tr class="memdesc:afdcc475d0eb776627691ae7ea4801ed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a>.  <a href="#afdcc475d0eb776627691ae7ea4801ed2">More...</a><br /></td></tr>
+<tr class="memdesc:afdcc475d0eb776627691ae7ea4801ed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a>.  <a href="#afdcc475d0eb776627691ae7ea4801ed2">More...</a><br /></td></tr>
 <tr class="separator:afdcc475d0eb776627691ae7ea4801ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae515c69baf47ea69d4ac650d3d1ac8d1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enc28j60_8c.html#ae515c69baf47ea69d4ac650d3d1ac8d1">enc28j60_init_bank</a> (<a class="el" href="structenc28j60.html">enc28j60</a> *ins)</td></tr>
 <tr class="memdesc:ae515c69baf47ea69d4ac650d3d1ac8d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the currently selected bank into <code>ins-&gt;bank</code>.  <a href="#ae515c69baf47ea69d4ac650d3d1ac8d1">More...</a><br /></td></tr>
@@ -169,13 +172,13 @@ Functions</h2></td></tr>
 <tr class="memdesc:a279727559a851df5048ef645ee41698e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the content of ERDPTL:ERDPTH register into <code>*ptr</code> if <code>ptr</code> is not null.  <a href="#a279727559a851df5048ef645ee41698e">More...</a><br /></td></tr>
 <tr class="separator:a279727559a851df5048ef645ee41698e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f7868821ec0a2d67c502ac611ea0f62"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enc28j60_8c.html#a0f7868821ec0a2d67c502ac611ea0f62">enc28j60_write</a> (<a class="el" href="structenc28j60.html">enc28j60</a> *ins, uint16_t start_ptr, char *frame, uint16_t length, <a class="el" href="enc28j60_8h.html#a9b4ceffe4b965c991548b12047d87511">enc28j60_spi_callback</a> on_finish)</td></tr>
-<tr class="memdesc:a0f7868821ec0a2d67c502ac611ea0f62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes entire frame into <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a>'s memory.  <a href="#a0f7868821ec0a2d67c502ac611ea0f62">More...</a><br /></td></tr>
+<tr class="memdesc:a0f7868821ec0a2d67c502ac611ea0f62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes entire frame into <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a>'s memory.  <a href="#a0f7868821ec0a2d67c502ac611ea0f62">More...</a><br /></td></tr>
 <tr class="separator:a0f7868821ec0a2d67c502ac611ea0f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae353d94056b89e52b7c4f385bf4b047b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enc28j60_8c.html#ae353d94056b89e52b7c4f385bf4b047b">enc28j60_writeframe</a> (<a class="el" href="structenc28j60.html">enc28j60</a> *ins, uint8_t control, uint16_t start_ptr, char *frame, uint16_t length, <a class="el" href="enc28j60_8h.html#a9b4ceffe4b965c991548b12047d87511">enc28j60_spi_callback</a> on_finish)</td></tr>
-<tr class="memdesc:ae353d94056b89e52b7c4f385bf4b047b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes control byte and entire frame into <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a>'s memory.  <a href="#ae353d94056b89e52b7c4f385bf4b047b">More...</a><br /></td></tr>
+<tr class="memdesc:ae353d94056b89e52b7c4f385bf4b047b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes control byte and entire frame into <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a>'s memory.  <a href="#ae353d94056b89e52b7c4f385bf4b047b">More...</a><br /></td></tr>
 <tr class="separator:ae353d94056b89e52b7c4f385bf4b047b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59cf90cc45b31638aad7eb74e4c99e15"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enc28j60_8c.html#a59cf90cc45b31638aad7eb74e4c99e15">enc28j60_istx</a> (<a class="el" href="structenc28j60.html">enc28j60</a> *ins, bool *status)</td></tr>
-<tr class="memdesc:a59cf90cc45b31638aad7eb74e4c99e15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whenever the <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a> still transmits a frame and writes the corresponding status into <code>*status</code>  <a href="#a59cf90cc45b31638aad7eb74e4c99e15">More...</a><br /></td></tr>
+<tr class="memdesc:a59cf90cc45b31638aad7eb74e4c99e15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whenever the <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a> still transmits a frame and writes the corresponding status into <code>*status</code>  <a href="#a59cf90cc45b31638aad7eb74e4c99e15">More...</a><br /></td></tr>
 <tr class="separator:a59cf90cc45b31638aad7eb74e4c99e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a681e4911f2fa1590bd49bbd32d4f39c0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enc28j60_8c.html#a681e4911f2fa1590bd49bbd32d4f39c0">enc28j60_jointx</a> (<a class="el" href="structenc28j60.html">enc28j60</a> *ins)</td></tr>
 <tr class="memdesc:a681e4911f2fa1590bd49bbd32d4f39c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits until the transmission (if any in progress) finishes and then returns (or in case of unrepairable error it may return sooner).  <a href="#a681e4911f2fa1590bd49bbd32d4f39c0">More...</a><br /></td></tr>
@@ -199,17 +202,17 @@ Functions</h2></td></tr>
 <tr class="memdesc:aeb10b9cdc6f777752f4d6d3ece8f87aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the seven-byte-long status vector written after TXed frame.  <a href="#aeb10b9cdc6f777752f4d6d3ece8f87aa">More...</a><br /></td></tr>
 <tr class="separator:aeb10b9cdc6f777752f4d6d3ece8f87aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab64074e15e39508131200154bf959a1f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enc28j60_8c.html#ab64074e15e39508131200154bf959a1f">enc28j60_transmitframeblocking</a> (<a class="el" href="structenc28j60.html">enc28j60</a> *ins, uint16_t start_ptr, uint16_t length)</td></tr>
-<tr class="memdesc:ab64074e15e39508131200154bf959a1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an ethernet frame of given length into <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a>'s memory starting at given pointer and transmits it with given control flags.  <a href="#ab64074e15e39508131200154bf959a1f">More...</a><br /></td></tr>
+<tr class="memdesc:ab64074e15e39508131200154bf959a1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes an ethernet frame of given length into <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a>'s memory starting at given pointer and transmits it with given control flags.  <a href="#ab64074e15e39508131200154bf959a1f">More...</a><br /></td></tr>
 <tr class="separator:ab64074e15e39508131200154bf959a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c2836c4e6e4710bdedca68d9fe93d19"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enc28j60_8c.html#a4c2836c4e6e4710bdedca68d9fe93d19">enc28j60_read_tryframe</a> (<a class="el" href="structenc28j60.html">enc28j60</a> *ins, char *rx, uint16_t length)</td></tr>
 <tr class="memdesc:a4c2836c4e6e4710bdedca68d9fe93d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs read from RX buffer.  <a href="#a4c2836c4e6e4710bdedca68d9fe93d19">More...</a><br /></td></tr>
 <tr class="separator:a4c2836c4e6e4710bdedca68d9fe93d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05b02d8d4d412d3e445f5a910239ba3e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enc28j60_8c.html#a05b02d8d4d412d3e445f5a910239ba3e">enc28j60_read_try</a> (<a class="el" href="structenc28j60.html">enc28j60</a> *ins, char *rx, uint16_t length, <a class="el" href="enc28j60_8h.html#a9b4ceffe4b965c991548b12047d87511">enc28j60_spi_callback</a> on_finish)</td></tr>
-<tr class="memdesc:a05b02d8d4d412d3e445f5a910239ba3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to read from <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a>'s memory.  <a href="#a05b02d8d4d412d3e445f5a910239ba3e">More...</a><br /></td></tr>
+<tr class="memdesc:a05b02d8d4d412d3e445f5a910239ba3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to read from <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a>'s memory.  <a href="#a05b02d8d4d412d3e445f5a910239ba3e">More...</a><br /></td></tr>
 <tr class="separator:a05b02d8d4d412d3e445f5a910239ba3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad16c5cb8d9e16601018629b73e307e76"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enc28j60_8c.html#ad16c5cb8d9e16601018629b73e307e76">enc28j60_read</a> (<a class="el" href="structenc28j60.html">enc28j60</a> *ins, uint16_t ptr, char *rx, uint16_t length, <a class="el" href="enc28j60_8h.html#a9b4ceffe4b965c991548b12047d87511">enc28j60_spi_callback</a> on_finish)</td></tr>
-<tr class="memdesc:ad16c5cb8d9e16601018629b73e307e76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to read from <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a>'s memory.  <a href="#ad16c5cb8d9e16601018629b73e307e76">More...</a><br /></td></tr>
-<tr class="separator:ad16c5cb8d9e16601018629b73e307e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad35a2fc021a5ade957c4602dc21ff1c1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enc28j60_8c.html#ad35a2fc021a5ade957c4602dc21ff1c1">enc28j60_read</a> (<a class="el" href="structenc28j60.html">enc28j60</a> *ins, uint16_t ptr, char *frame, uint16_t length, <a class="el" href="enc28j60_8h.html#a9b4ceffe4b965c991548b12047d87511">enc28j60_spi_callback</a> on_finish)</td></tr>
+<tr class="memdesc:ad35a2fc021a5ade957c4602dc21ff1c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to read from <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a>'s memory.  <a href="#ad35a2fc021a5ade957c4602dc21ff1c1">More...</a><br /></td></tr>
+<tr class="separator:ad35a2fc021a5ade957c4602dc21ff1c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a01d3d124160c7c198cd54dc0360930"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enc28j60_8c.html#a2a01d3d124160c7c198cd54dc0360930">enc28j60_readframe</a> (<a class="el" href="structenc28j60.html">enc28j60</a> *ins, char *frame, uint16_t max_length, <a class="el" href="enc28j60_8h.html#a9b4ceffe4b965c991548b12047d87511">enc28j60_spi_callback</a> on_finish)</td></tr>
 <tr class="memdesc:a2a01d3d124160c7c198cd54dc0360930"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads six-bytes-long header and then reads the frame of given max length into memory location pointed to by <code>frame</code>.  <a href="#a2a01d3d124160c7c198cd54dc0360930">More...</a><br /></td></tr>
 <tr class="separator:a2a01d3d124160c7c198cd54dc0360930"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -226,78 +229,20 @@ Functions</h2></td></tr>
 <tr class="memdesc:a590aa0182af9980bc40e9225aa6f7cd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait until there is frame available in the buffer, read it into local memory, do cleanup and return.  <a href="#a590aa0182af9980bc40e9225aa6f7cd0">More...</a><br /></td></tr>
 <tr class="separator:a590aa0182af9980bc40e9225aa6f7cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab255f915f0f58474ff5deadd0a66c3f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enc28j60_8c.html#ab255f915f0f58474ff5deadd0a66c3f9">enc28j60_enablerx</a> (<a class="el" href="structenc28j60.html">enc28j60</a> *ins)</td></tr>
-<tr class="memdesc:ab255f915f0f58474ff5deadd0a66c3f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets ECON1.RXEN bit in order to enable reception of ethernet frames.  <a href="#ab255f915f0f58474ff5deadd0a66c3f9">More...</a><br /></td></tr>
+<tr class="memdesc:ab255f915f0f58474ff5deadd0a66c3f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable reception of frames.  <a href="#ab255f915f0f58474ff5deadd0a66c3f9">More...</a><br /></td></tr>
 <tr class="separator:ab255f915f0f58474ff5deadd0a66c3f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bc4f9507c064d903267370afe9c3429"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enc28j60_8c.html#a6bc4f9507c064d903267370afe9c3429">enc28j60_disablerx</a> (<a class="el" href="structenc28j60.html">enc28j60</a> *ins)</td></tr>
+<tr class="memdesc:a6bc4f9507c064d903267370afe9c3429"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable reception of frames.  <a href="#a6bc4f9507c064d903267370afe9c3429">More...</a><br /></td></tr>
+<tr class="separator:a6bc4f9507c064d903267370afe9c3429"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Part of <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a> driver. </p>
+<div class="textblock"><p>Part of <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a> driver. </p>
 <dl class="section author"><dt>Author</dt><dd>Dalibor Drgon <a href="#" onclick="location.href='mai'+'lto:'+'dal'+'ib'+'or.'+'dr'+'gon'+'@g'+'mai'+'l.'+'com'; return false;">dalib<span style="display: none;">.nosp@m.</span>or.d<span style="display: none;">.nosp@m.</span>rgon@<span style="display: none;">.nosp@m.</span>gmai<span style="display: none;">.nosp@m.</span>l.com</a> </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2020-05-01</dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2020 Dalibor Drgon <a href="#" onclick="location.href='mai'+'lto:'+'dal'+'ib'+'or.'+'dr'+'gon'+'@g'+'mai'+'l.'+'com'; return false;">dalib<span style="display: none;">.nosp@m.</span>or.d<span style="display: none;">.nosp@m.</span>rgon@<span style="display: none;">.nosp@m.</span>gmai<span style="display: none;">.nosp@m.</span>l.com</a></dd></dl>
 <p>This code is licensed under MIT license (see LICENSE.txt for details) </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a3c3394b6f9e9fae55bbec889fe2b0483"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c3394b6f9e9fae55bbec889fe2b0483">&#9670;&nbsp;</a></span>enc28j60_spi_transfer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int enc28j60_spi_transfer </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structenc28j60.html">enc28j60</a> *&#160;</td>
-          <td class="paramname"><em>instance</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>tx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>rx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned&#160;</td>
-          <td class="paramname"><em>length</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="enc28j60_8h.html#a9b4ceffe4b965c991548b12047d87511">enc28j60_spi_callback</a>&#160;</td>
-          <td class="paramname"><em>on_finish</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>This function performs (using DMA or blocking I/O) parallely transmision from 'tx' buffer and reception into 'rx' buffer. </p>
-<p>If the callback is null, this function must block and return the error code, otherwise it may or may not block and the error code should be passed to the callback (and 0 returned).</p>
-<p>NOTE: You must implement this function.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">instance</td><td>Pointer to <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a> struct (may contain hardware/software specific fields to determine which SPI to use). </td></tr>
-    <tr><td class="paramname">tx</td><td>Pointer pointing to data for transmission. Will not be null. </td></tr>
-    <tr><td class="paramname">rx</td><td>Pointer pointing to memory where data sohuld be received. May be null, in which case received data may be ignored. May also be same as 'tx'. </td></tr>
-    <tr><td class="paramname">length</td><td>Length of 'tx' (and length of 'rx' if 'rx' is not null). </td></tr>
-    <tr><td class="paramname">on_finish</td><td>Callback which should be called when transfer is completed. If callback is null, the function must block and return error code, otherwise if callback is supplied the function may or may not block and callback must be called (with error code as parameter) and zero must be returned.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>int error code, or 0 on success (return 0 when callback is supplied) </dd></dl>
-
-</div>
-</div>
 <a id="a5e6599ebfa682812a954b87834ad2e8f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5e6599ebfa682812a954b87834ad2e8f">&#9670;&nbsp;</a></span>enc28j60_blockingio()</h2>
 
@@ -336,8 +281,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Performs IO on <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a>. </p>
-<p>Internally, this calls <a class="el" href="enc28j60-struct_8example_8h.html#a3c3394b6f9e9fae55bbec889fe2b0483" title="This function performs (using DMA or blocking I/O) parallely transmision from &#39;tx&#39; buffer and recepti...">enc28j60_spi_transfer()</a> until it succeedes or fails with unrepairable error. Because of this, the request has to be repeatable (has to be read/write to register, cannot be read/write to buffer memory as the read and write pointers get internally incremented) in case the transfer fails and is repeated.</p>
+<p>Performs IO on <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a>. </p>
+<p>Internally, this calls enc28j60_spi_transfer() until it succeedes or fails with unrepairable error. Because of this, the request has to be repeatable (has to be read/write to register, cannot be read/write to buffer memory as the read and write pointers get internally incremented) in case the transfer fails and is repeated.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ins</td><td>Enc28j60 pointer </td></tr>
@@ -867,6 +812,96 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ab69afd5e97ad305bb408e46c0e56678f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab69afd5e97ad305bb408e46c0e56678f">&#9670;&nbsp;</a></span>enc28j60_readphyreg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int enc28j60_readphyreg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structenc28j60.html">enc28j60</a> *&#160;</td>
+          <td class="paramname"><em>ins</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>content</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read from PHY register. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ins</td><td>Enc28j60 pointer </td></tr>
+    <tr><td class="paramname">reg</td><td>Register to be read </td></tr>
+    <tr><td class="paramname">content</td><td>Where to write the register value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int Zero on succes or non-zero error in case of unrepairable error. </dd></dl>
+
+</div>
+</div>
+<a id="a9604dd49cfd32534e951b9aa46d8f8ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9604dd49cfd32534e951b9aa46d8f8ef">&#9670;&nbsp;</a></span>enc28j60_writephyreg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int enc28j60_writephyreg </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structenc28j60.html">enc28j60</a> *&#160;</td>
+          <td class="paramname"><em>ins</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>reg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>content</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Write into PHY register. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ins</td><td>Enc28j60 pointer </td></tr>
+    <tr><td class="paramname">reg</td><td>Register to be written </td></tr>
+    <tr><td class="paramname">content</td><td>New value of the register </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int Zero on succes or non-zero error in case of unrepairable error. </dd></dl>
+
+</div>
+</div>
 <a id="afda31f896a1a6bc9460bb76aaed93f05"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afda31f896a1a6bc9460bb76aaed93f05">&#9670;&nbsp;</a></span>enc28j60_readrevision()</h2>
 
@@ -921,7 +956,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sends soft-reset and waits until the ENC28J60 is operational again. </p>
+<p>Sends soft-reset and waits until the <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a> is operational again. </p>
 <p>Implementation compliant with errata #2 and #19.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1073,7 +1108,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initializes the <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a>. </p>
+<p>Initializes the <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a>. </p>
+<p>Compliant with errata #9.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ins</td><td>Enc28j60 pointer </td></tr>
@@ -1439,12 +1475,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Writes entire frame into <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a>'s memory. </p>
+<p>Writes entire frame into <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a>'s memory. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="enc28j60_8h.html#aa8bdeba76f6551e39dbc8db9a64270de" title="Sets the ECON1.TXRTS flag in order to start transmission. ">enc28j60_transmitframe()</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ins</td><td>Enc28j60 pointer </td></tr>
-    <tr><td class="paramname">start_ptr</td><td>Where the frame starts in <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a>'s memory </td></tr>
+    <tr><td class="paramname">start_ptr</td><td>Where the frame starts in <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a>'s memory </td></tr>
     <tr><td class="paramname">frame</td><td>The frame to be written. </td></tr>
     <tr><td class="paramname">length</td><td>How long the frame is </td></tr>
     <tr><td class="paramname">on_finish</td><td>Callback to be called when the frame is written to the memory. If not null and if the underlying driver supports asynchronous transfer, this function will be asynchronous and this callback will get called once the transfer finishes with appropriate error code. Otherwise this transfer will be blocking and return the appropriate error code. </td></tr>
@@ -1505,13 +1541,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Writes control byte and entire frame into <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a>'s memory. </p>
+<p>Writes control byte and entire frame into <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a>'s memory. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="enc28j60_8h.html#aa8bdeba76f6551e39dbc8db9a64270de" title="Sets the ECON1.TXRTS flag in order to start transmission. ">enc28j60_transmitframe()</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ins</td><td>Enc28j60 pointer </td></tr>
     <tr><td class="paramname">control</td><td>The control byte written before the frame. See ENC28J60_PKTCTRL_* macros. </td></tr>
-    <tr><td class="paramname">start_ptr</td><td>Where the frame starts in <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a>'s memory </td></tr>
+    <tr><td class="paramname">start_ptr</td><td>Where the frame starts in <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a>'s memory </td></tr>
     <tr><td class="paramname">frame</td><td>The frame to be written. </td></tr>
     <tr><td class="paramname">length</td><td>How long the frame is </td></tr>
     <tr><td class="paramname">on_finish</td><td>Callback to be called when the frame is written to the memory. If not null and if the underlying driver supports asynchronous transfer, this function will be asynchronous and this callback will get called once the transfer finishes with appropriate error code. Otherwise this transfer will be blocking and return the appropriate error code. </td></tr>
@@ -1548,7 +1584,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Checks whenever the <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a> still transmits a frame and writes the corresponding status into <code>*status</code> </p>
+<p>Checks whenever the <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a> still transmits a frame and writes the corresponding status into <code>*status</code> </p>
 <p>The transmission state should be checked before calling <a class="el" href="enc28j60_8h.html#aa8bdeba76f6551e39dbc8db9a64270de" title="Sets the ECON1.TXRTS flag in order to start transmission. ">enc28j60_transmitframe()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1587,7 +1623,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int Zero on succes or non-zero error in case of unrepairable error. </dd></dl>
-<p>TODO: When there is not enough current during transmission, the <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a> bugs and ECON1.TXRTS remainins set infinitely. Make sure to add some protection against that, by for example time out. </p>
+<p>TODO: When there is not enough current during transmission, the <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a> bugs and ECON1.TXRTS remainins set infinitely. Make sure to add some protection against that, by for example time out. </p>
 
 </div>
 </div>
@@ -1638,7 +1674,7 @@ Functions</h2></td></tr>
 <p>Sets the ECON1.TXRTS flag in order to start transmission. </p>
 <p>Before calling this make sure that there is no ongoing tranmission already taking place (by calling eithet <a class="el" href="enc28j60_8h.html#a59cf90cc45b31638aad7eb74e4c99e15" title="Checks whenever the enc28j60 still transmits a frame and writes the corresponding status into *status...">enc28j60_istx()</a> or <a class="el" href="enc28j60_8h.html#a681e4911f2fa1590bd49bbd32d4f39c0" title="Waits until the transmission (if any in progress) finishes and then returns (or in case of unrepairab...">enc28j60_jointx()</a>).</p>
 <p>Example usage (using advanced SPI driver. If you are not using version with advanced SPI driver, simply change the type of <code>tx_frame</code> from <code>char*</code> to <code>enc28j60_header*</code>):</p>
-<div class="fragment"><div class="line"><span class="keywordtype">int</span> transmitframeblocking(uint16_t tx_start, <span class="keywordtype">char</span> *tx_frame, uint16_t tx_length) {</div><div class="line">   <a class="code" href="enc28j60_8c.html#ae353d94056b89e52b7c4f385bf4b047b">enc28j60_writeframe</a>(&amp;eth1, 0, tx_start, tx_frame, tx_length, NULL);</div><div class="line">   <a class="code" href="enc28j60_8c.html#ab3d57ae04a06bd5129eccdb4916244c6">enc28j60_init_txbuffer</a>(&amp;eth1, tx_start, tx_length);</div><div class="line">   <span class="keywordtype">unsigned</span> remaining_retries = 16;</div><div class="line">   <a class="code" href="structenc28j60__txstatus.html">enc28j60_txstatus</a> status;</div><div class="line">   <span class="keywordflow">do</span> {</div><div class="line">       <a class="code" href="enc28j60_8c.html#a55f173acfe955c3b032a65897cc42dbc">enc28j60_cleartxflags</a>(&amp;eth1);</div><div class="line">       <a class="code" href="enc28j60_8c.html#aa8bdeba76f6551e39dbc8db9a64270de">enc28j60_transmitframe</a>(&amp;eth1);</div><div class="line">       <a class="code" href="enc28j60_8c.html#a681e4911f2fa1590bd49bbd32d4f39c0">enc28j60_jointx</a>(&amp;eth1);</div><div class="line">       <a class="code" href="enc28j60_8c.html#a1bc15c88a531442f5540833889695fae">enc28j60_aftertx</a>(&amp;eth1);</div><div class="line">       <a class="code" href="enc28j60_8c.html#aeb10b9cdc6f777752f4d6d3ece8f87aa">enc28j60_readtxstatus</a>(&amp;eth1, tx_start, tx_length, &amp;status);</div><div class="line">       <a class="code" href="enc28j60_8c.html#adfb5003097e80ebddd77dd2045d6a3a9">enc28j60_decrementretries</a>(&amp;remaining_retries);</div><div class="line">   } <span class="keywordflow">while</span>(<a class="code" href="enc28j60_8c.html#ae54a62cb401e5f96858a1fc8659ed7bb">enc28j60_shouldretransmit</a>(&amp;status, remaining_retries));</div><div class="line">}</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="enc28j60_8h.html#a55f173acfe955c3b032a65897cc42dbc" title="Clears EIR.TXIF and EIR.TXERIF flags. ">enc28j60_cleartxflags()</a> </dd>
+<div class="fragment"><div class="line"><span class="keywordtype">int</span> writeandtransmitframeblocking(uint16_t tx_start, <span class="keywordtype">char</span> *tx_frame, uint16_t tx_length) {</div><div class="line">   <a class="code" href="enc28j60_8c.html#ae353d94056b89e52b7c4f385bf4b047b">enc28j60_writeframe</a>(&amp;eth1, 0, tx_start, tx_frame, tx_length, NULL);</div><div class="line">   <a class="code" href="enc28j60_8c.html#ab3d57ae04a06bd5129eccdb4916244c6">enc28j60_init_txbuffer</a>(&amp;eth1, tx_start, tx_length);</div><div class="line">   <span class="keywordtype">unsigned</span> remaining_retries = 16;</div><div class="line">   <a class="code" href="structenc28j60__txstatus.html">enc28j60_txstatus</a> status;</div><div class="line">   <span class="keywordflow">do</span> {</div><div class="line">       <a class="code" href="enc28j60_8c.html#a55f173acfe955c3b032a65897cc42dbc">enc28j60_cleartxflags</a>(&amp;eth1);</div><div class="line">       <a class="code" href="enc28j60_8c.html#aa8bdeba76f6551e39dbc8db9a64270de">enc28j60_transmitframe</a>(&amp;eth1);</div><div class="line">       <a class="code" href="enc28j60_8c.html#a681e4911f2fa1590bd49bbd32d4f39c0">enc28j60_jointx</a>(&amp;eth1);</div><div class="line">       <a class="code" href="enc28j60_8c.html#a1bc15c88a531442f5540833889695fae">enc28j60_aftertx</a>(&amp;eth1);</div><div class="line">       <a class="code" href="enc28j60_8c.html#aeb10b9cdc6f777752f4d6d3ece8f87aa">enc28j60_readtxstatus</a>(&amp;eth1, tx_start, tx_length, &amp;status);</div><div class="line">       <a class="code" href="enc28j60_8c.html#adfb5003097e80ebddd77dd2045d6a3a9">enc28j60_decrementretries</a>(&amp;remaining_retries);</div><div class="line">   } <span class="keywordflow">while</span>(<a class="code" href="enc28j60_8c.html#ae54a62cb401e5f96858a1fc8659ed7bb">enc28j60_shouldretransmit</a>(&amp;status, remaining_retries));</div><div class="line">}</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="enc28j60_8h.html#a55f173acfe955c3b032a65897cc42dbc" title="Clears EIR.TXIF and EIR.TXERIF flags. ">enc28j60_cleartxflags()</a> </dd>
 <dd>
 <a class="el" href="enc28j60_8h.html#a59cf90cc45b31638aad7eb74e4c99e15" title="Checks whenever the enc28j60 still transmits a frame and writes the corresponding status into *status...">enc28j60_istx()</a> </dd>
 <dd>
@@ -1805,7 +1841,7 @@ false When late collision did not happen or remaining_tries == 0 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ins</td><td>Enc28j60 pointer </td></tr>
-    <tr><td class="paramname">tx_start</td><td>Where the frame starts in <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a>'s memory </td></tr>
+    <tr><td class="paramname">tx_start</td><td>Where the frame starts in <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a>'s memory </td></tr>
     <tr><td class="paramname">tx_length</td><td>How long the frame is (including the opcode if not using advanced SPI driver) </td></tr>
     <tr><td class="paramname">status</td><td>Where the parsed data will be written to. </td></tr>
   </table>
@@ -1847,15 +1883,15 @@ false When late collision did not happen or remaining_tries == 0 </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Writes an ethernet frame of given length into <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a>'s memory starting at given pointer and transmits it with given control flags. </p>
+<p>Writes an ethernet frame of given length into <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a>'s memory starting at given pointer and transmits it with given control flags. </p>
 <p>Compliant with errata #12, #13 and #15.</p>
-<p>The functionality of this function can be summarised by the following code (not including the error checks for simplicity and readability and not including <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a> pointer but using static <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a> instance instead):</p>
+<p>The functionality of this function can be summarised by the following code (not including the error checks for simplicity and readability and not including <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a> pointer but using static <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a> instance instead):</p>
 <div class="fragment"><div class="line"><a class="code" href="structenc28j60.html">enc28j60</a> eth1;</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> transmitframeblocking(uint16_t tx_start, uint16_t tx_length) {</div><div class="line">   <span class="keywordtype">unsigned</span> remaining_retries = 16;</div><div class="line">   <a class="code" href="structenc28j60__txstatus.html">enc28j60_txstatus</a> status;</div><div class="line">   <span class="keywordflow">do</span> {</div><div class="line">       <a class="code" href="enc28j60_8c.html#a55f173acfe955c3b032a65897cc42dbc">enc28j60_cleartxflags</a>(&amp;eth1);</div><div class="line">       <a class="code" href="enc28j60_8c.html#aa8bdeba76f6551e39dbc8db9a64270de">enc28j60_transmitframe</a>(&amp;eth1);</div><div class="line">       <a class="code" href="enc28j60_8c.html#a681e4911f2fa1590bd49bbd32d4f39c0">enc28j60_jointx</a>(&amp;eth1);</div><div class="line">       <a class="code" href="enc28j60_8c.html#a1bc15c88a531442f5540833889695fae">enc28j60_aftertx</a>(&amp;eth1);</div><div class="line">       <a class="code" href="enc28j60_8c.html#aeb10b9cdc6f777752f4d6d3ece8f87aa">enc28j60_readtxstatus</a>(&amp;eth1, tx_start, tx_length, &amp;status);</div><div class="line">       <a class="code" href="enc28j60_8c.html#adfb5003097e80ebddd77dd2045d6a3a9">enc28j60_decrementretries</a>(&amp;remaining_retries);</div><div class="line">   } <span class="keywordflow">while</span>(<a class="code" href="enc28j60_8c.html#ae54a62cb401e5f96858a1fc8659ed7bb">enc28j60_shouldretransmit</a>(&amp;status, remaining_retries));</div><div class="line">}</div></div><!-- fragment --><p>Example usage (without error checks):</p>
 <div class="fragment"><div class="line"><a class="code" href="enc28j60_8c.html#ae353d94056b89e52b7c4f385bf4b047b">enc28j60_writeframe</a>(&amp;eth1, 0, tx_start, tx_frame, tx_frame_length, NULL);</div><div class="line"><a class="code" href="enc28j60_8c.html#ab3d57ae04a06bd5129eccdb4916244c6">enc28j60_init_txbuffer</a>(&amp;eth1, tx_start, tx_frame_length);</div><div class="line"><a class="code" href="enc28j60_8c.html#ab64074e15e39508131200154bf959a1f">enc28j60_transmitframeblocking</a>(&amp;eth1, tx_start, tx_frame_length);</div></div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="enc28j60_8h.html#aa8bdeba76f6551e39dbc8db9a64270de" title="Sets the ECON1.TXRTS flag in order to start transmission. ">enc28j60_transmitframe()</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ins</td><td>Enc28j60 pointer </td></tr>
-    <tr><td class="paramname">start_ptr</td><td>Where the frame starts in <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a>'s memory </td></tr>
+    <tr><td class="paramname">start_ptr</td><td>Where the frame starts in <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a>'s memory </td></tr>
     <tr><td class="paramname">length</td><td>How long the frame is (including the opcode if not using advanced SPI driver) </td></tr>
   </table>
   </dd>
@@ -1900,7 +1936,7 @@ false When late collision did not happen or remaining_tries == 0 </dd></dl>
 <p>NOTE: The packet 'rx' must be one byte longer than needed (and thus 'length' must be incremented by 1 as well) since the first byte will contain opcode.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ins</td><td>Instance of <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a>. </td></tr>
+    <tr><td class="paramname">ins</td><td>Instance of <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a>. </td></tr>
     <tr><td class="paramname">rx</td><td>Buffer where data will be received. Note that after reading you should ignore first byte, as it will contain 0xff. </td></tr>
     <tr><td class="paramname">length</td><td>How many bytes you wish to read including the first byte. </td></tr>
   </table>
@@ -1948,7 +1984,7 @@ false When late collision did not happen or remaining_tries == 0 </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Try to read from <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a>'s memory. </p>
+<p>Try to read from <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a>'s memory. </p>
 <p>If callback is present and underlying SPI driver supports it, this request is asynchronous. In case of any error, no retrying will be done and resulting error code will be immediately returned (or passed via a callback) to the user.</p>
 <p>Do not forget to set read pointer by calling <a class="el" href="enc28j60_8h.html#aa2fa6bb9bea4e7a2941898f4f2f0506a" title="Writes the ERDPTL:ERDPTH registers with given value. ">enc28j60_writereadpointer()</a></p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="enc28j60_8h.html#aa2fa6bb9bea4e7a2941898f4f2f0506a" title="Writes the ERDPTL:ERDPTH registers with given value. ">enc28j60_writereadpointer()</a></dd></dl>
@@ -1965,8 +2001,8 @@ false When late collision did not happen or remaining_tries == 0 </dd></dl>
 
 </div>
 </div>
-<a id="ad16c5cb8d9e16601018629b73e307e76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad16c5cb8d9e16601018629b73e307e76">&#9670;&nbsp;</a></span>enc28j60_read()</h2>
+<a id="ad35a2fc021a5ade957c4602dc21ff1c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad35a2fc021a5ade957c4602dc21ff1c1">&#9670;&nbsp;</a></span>enc28j60_read()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2009,12 +2045,12 @@ false When late collision did not happen or remaining_tries == 0 </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Try to read from <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a>'s memory. </p>
+<p>Try to read from <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a>'s memory. </p>
 <p>If callback is present and underlying SPI driver supports it, this request is asynchronous. In case of any repairable error, we will retry until either succeding or failing with unrepairable error.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ins</td><td>Enc28j60 pointer </td></tr>
-    <tr><td class="paramname">ptr</td><td>Where to start reading from (pointer to <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a>'s memory) </td></tr>
+    <tr><td class="paramname">ptr</td><td>Where to start reading from (pointer to <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a>'s memory) </td></tr>
     <tr><td class="paramname">frame</td><td>The data will be read there. </td></tr>
     <tr><td class="paramname">length</td><td>Length of the data to read. </td></tr>
     <tr><td class="paramname">on_finish</td><td>Callback, optional, may be null. If not null and the underlying SPI driver supports asynchronous requests, the request will be asynchronous, the resulting error code will be handled over to given callback and zero will be returned. Otherwise if the SPI driver does not support asynchronous operation, or this callback is null, we will operate in synchronous mode and resulting error code will be returned. </td></tr>
@@ -2065,7 +2101,12 @@ false When late collision did not happen or remaining_tries == 0 </dd></dl>
 
 <p>Reads six-bytes-long header and then reads the frame of given max length into memory location pointed to by <code>frame</code>. </p>
 <p>Also updates <a class="el" href="structenc28j60.html#a15787229501f022952b110c0c9554897" title="Status read from buffer. ">enc28j60.rxstatus</a> (see ENC28J60_RXSTATUS_* flags for testing) and fills <a class="el" href="structenc28j60.html#a069171f78d32ca168f2abd63dd5836de" title="Used internally when asynchronous request is called and error happens to retry the request if needed...">enc28j60.length</a> with the original length.</p>
-<p>Before calling, make sure that there is frame in the buffer by checking the value read from <a class="el" href="enc28j60_8h.html#aeb18851eb58e4d3ba572e5d6953b7015" title="Reads the number of received frames waiting to be processed in the buffer memory (reds the EPKTCNT re...">enc28j60_readrxframescount()</a>, otherwise corruption of localy stored pointers will happen and garbage will be read from <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a>'s memory.</p>
+<p>Before calling, make sure that there is frame in the buffer by checking the value read from <a class="el" href="enc28j60_8h.html#aeb18851eb58e4d3ba572e5d6953b7015" title="Reads the number of received frames waiting to be processed in the buffer memory (reds the EPKTCNT re...">enc28j60_readrxframescount()</a>, otherwise corruption of localy stored pointers will happen and garbage will be read from <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a>'s memory.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="enc28j60_8h.html#a590aa0182af9980bc40e9225aa6f7cd0" title="Wait until there is frame available in the buffer, read it into local memory, do cleanup and return...">enc28j60_receiveframeblocking()</a> </dd>
+<dd>
+<a class="el" href="enc28j60_8h.html#ab255f915f0f58474ff5deadd0a66c3f9" title="Enable reception of frames. ">enc28j60_enablerx()</a> </dd>
+<dd>
+<a class="el" href="enc28j60_8h.html#a85fa097203908966343b81b0367f3541" title="Writes the ERXRDPTL:ERXRDPTH registers-pointer with appropriate value to free up space in the buffer ...">enc28j60_finishreadframe()</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ins</td><td>Enc28j60 pointer </td></tr>
@@ -2098,6 +2139,11 @@ false When late collision did not happen or remaining_tries == 0 </dd></dl>
 <p>Writes the ERXRDPTL:ERXRDPTH registers-pointer with appropriate value to free up space in the buffer and decrements EPKTCNT register by one. </p>
 <p>Should be called after frame is received and read from the buffer.</p>
 <p>Internally uses <a class="el" href="enc28j60_8h.html#a702e728c2042eef92799db9e7dd8aca2" title="Writes the ERXRDPTL:ERXRDPTH registers-pointer with appropriate value to free up space in the buffer...">enc28j60_advancerxreadpointer()</a>, compliant with errata #14.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="enc28j60_8h.html#a590aa0182af9980bc40e9225aa6f7cd0" title="Wait until there is frame available in the buffer, read it into local memory, do cleanup and return...">enc28j60_receiveframeblocking()</a> </dd>
+<dd>
+<a class="el" href="enc28j60_8h.html#ab255f915f0f58474ff5deadd0a66c3f9" title="Enable reception of frames. ">enc28j60_enablerx()</a> </dd>
+<dd>
+<a class="el" href="enc28j60_8h.html#a2a01d3d124160c7c198cd54dc0360930" title="Reads six-bytes-long header and then reads the frame of given max length into memory location pointed...">enc28j60_readframe()</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ins</td><td>Enc28j60 pointer </td></tr>
@@ -2216,12 +2262,17 @@ false When late collision did not happen or remaining_tries == 0 </dd></dl>
 <p>Wait until there is frame available in the buffer, read it into local memory, do cleanup and return. </p>
 <p>If timeout is not zero, the time spent waiting will be limited to given number of ticks. Also updates <a class="el" href="structenc28j60.html#a15787229501f022952b110c0c9554897" title="Status read from buffer. ">enc28j60.rxstatus</a> (see ENC28J60_RXSTATUS_* flags for testing) and fills <a class="el" href="structenc28j60.html#a069171f78d32ca168f2abd63dd5836de" title="Used internally when asynchronous request is called and error happens to retry the request if needed...">enc28j60.length</a> with the original length.</p>
 <p>If you don't want this functioon to block, make sure to check number of received frames by calling <a class="el" href="enc28j60_8h.html#aeb18851eb58e4d3ba572e5d6953b7015" title="Reads the number of received frames waiting to be processed in the buffer memory (reds the EPKTCNT re...">enc28j60_readrxframescount()</a>. If there is at least one frame in the memory stored already, this function won't block.</p>
+<p>The functionality with <code>timeout=0</code> is as following (not including error checks): </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> receiveframeblocking(<a class="code" href="structenc28j60.html">enc28j60</a> *ins, <span class="keywordtype">char</span> *frame, uint16_t frame_len) {</div><div class="line">    uint8_t cnt;</div><div class="line">    <span class="keywordflow">do</span> {</div><div class="line">        <span class="comment">// Loop until we have received any frame</span></div><div class="line">        <a class="code" href="enc28j60_8c.html#aeb18851eb58e4d3ba572e5d6953b7015">enc28j60_readrxframescount</a>(ins, &amp;cnt);</div><div class="line">    } <span class="keywordflow">while</span>(cnt == 0);</div><div class="line"></div><div class="line">    <a class="code" href="enc28j60_8c.html#a2a01d3d124160c7c198cd54dc0360930">enc28j60_readframe</a>(ins, frame, frame_len, NULL);</div><div class="line">    <a class="code" href="enc28j60_8c.html#a85fa097203908966343b81b0367f3541">enc28j60_finishreadframe</a>(ins); </div><div class="line">}</div></div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a class="el" href="enc28j60_8h.html#ab255f915f0f58474ff5deadd0a66c3f9" title="Enable reception of frames. ">enc28j60_enablerx()</a> </dd>
+<dd>
+<a class="el" href="enc28j60_8h.html#a2a01d3d124160c7c198cd54dc0360930" title="Reads six-bytes-long header and then reads the frame of given max length into memory location pointed...">enc28j60_readframe()</a> </dd>
+<dd>
+<a class="el" href="enc28j60_8h.html#a85fa097203908966343b81b0367f3541" title="Writes the ERXRDPTL:ERXRDPTH registers-pointer with appropriate value to free up space in the buffer ...">enc28j60_finishreadframe()</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ins</td><td>Enc28j60 pointer </td></tr>
     <tr><td class="paramname">frame</td><td>Where the frame will be written to. </td></tr>
     <tr><td class="paramname">max_length</td><td>Maximum length of the frame </td></tr>
-    <tr><td class="paramname">timeout</td><td>Timeout - how many ticks to wait at max before returning. If zero, the <a class="el" href="structenc28j60.html" title="TODO: Modify this structure so you can figure out which SPI port to use (or hardcode it and keep this...">enc28j60</a> will wait infinitely long for a frame. </td></tr>
+    <tr><td class="paramname">timeout</td><td>Timeout - how many ticks to wait at max before returning. If zero, the <a class="el" href="structenc28j60.html" title="Structure holding important informations about enc28j60 and about the latest transmission performed...">enc28j60</a> will wait infinitely long for a frame. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2245,7 +2296,44 @@ false When late collision did not happen or remaining_tries == 0 </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Sets ECON1.RXEN bit in order to enable reception of ethernet frames. </p>
+<p>Enable reception of frames. </p>
+<p>Sets ECON1.RXEN bit in order to enable reception of ethernet frames.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="enc28j60_8h.html#a590aa0182af9980bc40e9225aa6f7cd0" title="Wait until there is frame available in the buffer, read it into local memory, do cleanup and return...">enc28j60_receiveframeblocking()</a> </dd>
+<dd>
+<a class="el" href="enc28j60_8h.html#a2a01d3d124160c7c198cd54dc0360930" title="Reads six-bytes-long header and then reads the frame of given max length into memory location pointed...">enc28j60_readframe()</a> </dd>
+<dd>
+<a class="el" href="enc28j60_8h.html#a85fa097203908966343b81b0367f3541" title="Writes the ERXRDPTL:ERXRDPTH registers-pointer with appropriate value to free up space in the buffer ...">enc28j60_finishreadframe()</a> </dd>
+<dd>
+<a class="el" href="enc28j60_8h.html#a6bc4f9507c064d903267370afe9c3429" title="Disable reception of frames. ">enc28j60_disablerx()</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ins</td><td>Enc28j60 pointer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int Zero on succes or non-zero error in case of unrepairable error. </dd></dl>
+
+</div>
+</div>
+<a id="a6bc4f9507c064d903267370afe9c3429"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bc4f9507c064d903267370afe9c3429">&#9670;&nbsp;</a></span>enc28j60_disablerx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int enc28j60_disablerx </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structenc28j60.html">enc28j60</a> *&#160;</td>
+          <td class="paramname"><em>ins</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disable reception of frames. </p>
+<p>Clear ECON1.RXEN bit and waits until ESTAT.RXBUSY is clearead.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="enc28j60_8h.html#ab255f915f0f58474ff5deadd0a66c3f9" title="Enable reception of frames. ">enc28j60_enablerx()</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ins</td><td>Enc28j60 pointer </td></tr>
